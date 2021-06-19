@@ -4,7 +4,7 @@ import Notification from '../../components/notification'
 export default function Notifications() {
   const notificationsArray = new Array(6).fill(0)
   return (
-    <div className='row col-10 justify-content-center my-4 mx-auto'>
+    <div className='row col-12 col-md-10 col-lg-8  justify-content-center mx-auto'>
       {notificationsArray.map((_, index) => <Notification key={index} />)}
     </div>
   )

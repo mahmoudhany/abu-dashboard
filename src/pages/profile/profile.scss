@@ -1,0 +1,42 @@
+.profile {
+	box-shadow: 0px 0px 10px 1px rgba(192, 185, 185, 0.5);
+	-webkit-box-shadow: 0px 0px 10px 1px rgba(192, 185, 185, 0.5);
+	-moz-box-shadow: 0px 0px 10px 1px rgba(192, 185, 185, 0.5);
+	border-radius: 10px;
+	padding: 30px 10px;
+
+	button {
+		display: block;
+		margin: 20px auto 0;
+	}
+	.avatar {
+		justify-content: center;
+		&_img {
+			position: relative;
+			overflow: hidden;
+			width: 120px;
+			height: 120px;
+			padding: 0;
+			img {
+				width: 100%;
+				height: 100%;
+				border-radius: 50%;
+				object-fit: cover;
+			}
+		}
+		&_upload {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+			border-radius: 50%;
+			opacity: 0;
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+}
