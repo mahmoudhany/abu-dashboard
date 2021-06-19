@@ -26,7 +26,6 @@ self.addEventListener('fetch', (event) => {
   if (!navigator.onLine) {
     event.respondWith(
       caches.match(event.request).then((response) => {
-        // return response || fetch(event.request);
         if (response) return response
         let requestUrl = event.request.clone()
         return fetch(requestUrl)
@@ -34,13 +33,3 @@ self.addEventListener('fetch', (event) => {
     )
   }
 })
-
-// Activate service worker
-// self.addEventListener('activate', (event) => {
-//   event.waitUntil(
-//     caches.keys().then((names) => {
-//       for (let name of names)
-//         caches.delete(name);
-//     })
-//   )
-// });

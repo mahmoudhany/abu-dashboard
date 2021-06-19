@@ -4,7 +4,6 @@ import profileImg from '../../assets/profile.jpg'
 
 export default function Notification() {
   return (
-    // <div className='col-10 col-md-8 message'>
 
     <div className='col-10 notification'>
       <div className="notification_img">

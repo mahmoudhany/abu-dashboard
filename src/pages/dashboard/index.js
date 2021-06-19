@@ -6,7 +6,6 @@ export default function Dashboard() {
   const url = 'http://dataservice.accuweather.com/forecasts/v1/daily/1day/127164?apikey=e1XDhiGSeALBihF6HHSWQVnkAIPWAu1a&metric=true'
   const [forecast, setForecast] = useState({})
   const [loading, setLoading] = useState(false)
-  // const [offline, setOffline] = useState(false)
 
   const getForcast = async () => {
     try {
@@ -16,7 +15,6 @@ export default function Dashboard() {
       localStorage.setItem('forecast', JSON.stringify(response.data.DailyForecasts[0]))
       setLoading(false)
     } catch (error) {
-      // setOffline(true)
       let localForecast = localStorage.getItem('forecast')
       setForecast(JSON.parse(localForecast))
       console.log('local', localForecast);

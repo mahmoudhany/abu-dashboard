@@ -35,7 +35,6 @@ class Profile extends Component {
     avatarFile: null
   }
   handleImageUpload = (e) => {
-    // console.log(e.target.files[0]);
     this.setState(prev => ({
       ...prev,
       avatarFile: URL.createObjectURL(e.target.files[0])
