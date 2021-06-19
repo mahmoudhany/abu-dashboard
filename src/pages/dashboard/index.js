@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import Card from '../../components/card'
 
 export default function Dashboard() {
-  const url = 'http://dataservice.accuweather.com/forecasts/v1/daily/1day/127164?apikey=e1XDhiGSeALBihF6HHSWQVnkAIPWAu1a&metric=true'
+  const url = 'https://dataservice.accuweather.com/forecasts/v1/daily/1day/127164?apikey=hBJ9Gqojcsy6qOiRAToOgjiarNnmkgjL&metric=true'
   const [forecast, setForecast] = useState({})
   const [loading, setLoading] = useState(false)
 
