@@ -6,7 +6,6 @@ import './navbar.scss'
 
 export default function Navbar() {
   const location = useLocation()
-  console.log(location.pathname);
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top">
       <div className="container">
