@@ -1,12 +1,6 @@
 const CACHE_NAME = "version-2"
-const expectedCaches = [CACHE_NAME];
-const dynamicCache = "dynamic-v1"
 
 const urlsToCache = [
-  // '/static/js/main.*.chunk.js',
-  // '/static/js/vendors~main.chunk.js',
-  // '/static/js/bundle.js',
-  // '/static/js/0.chunk.js',
   '/index.html',
   '/',
   '/messages',
