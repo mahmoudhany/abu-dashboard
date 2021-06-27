@@ -16,6 +16,9 @@ function App() {
           <Route path='/notifications' exact component={Notifications} />
           <Route path='/messages' exact component={Messages} />
           <Route path='/profile' exact component={Profile} />
+          <Route>
+            <h1 className='text-center'>404 Page Not Found</h1>
+          </Route>
         </Switch>
       </div>
     </div>

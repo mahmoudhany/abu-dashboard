@@ -7,6 +7,7 @@
 		}
 		.navbar-collapse {
 			flex-grow: 0;
+			position: relative;
 		}
 		.navbar_title {
 			font-size: 24px;
@@ -25,6 +26,21 @@
 		:hover {
 			outline: 0;
 			box-shadow: none;
+		}
+	}
+
+	.show {
+		@media (max-width: 992px) {
+			transition: height 3s ease-in-out;
+			transform: translateY(0%);
+			opacity: 1;
+		}
+	}
+	.hide {
+		@media (max-width: 992px) {
+			transition: height 3s ease-in-out;
+			transform: translateY(-100%);
+			opacity: 0;
 		}
 	}
 }

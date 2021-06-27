@@ -72,8 +72,8 @@ class Profile extends Component {
   render() {
     const { fields, avatarFile } = this.state
     return (
-      <div className='container row col-10 col-md-4 mx-auto profile' >
-        <form>
+      <div className='col-10 col-md-6 mx-auto profile' >
+        <form className='px-2'>
           <div className="form-group row avatar">
             <div className="avatar_img">
               <img src={avatarFile ? avatarFile : avatar} alt="avatar" />

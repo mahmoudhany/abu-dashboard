@@ -12,13 +12,9 @@ export default function Dashboard() {
       setLoading(true)
       const response = await axios.get(url)
       setForecast(response.data.DailyForecasts[0])
-      localStorage.setItem('forecast', JSON.stringify(response.data.DailyForecasts[0]))
       setLoading(false)
     } catch (error) {
-      let localForecast = localStorage.getItem('forecast')
-      setForecast(JSON.parse(localForecast))
-      console.log('local', localForecast);
-      setLoading(false)
+      console.log('error ', error);
     }
   }
 
